@@ -1,9 +1,9 @@
-# Week 3
+# Week 5
 1) Run an MD simulation of alanine dipeptide at 300K for 5 ns on 1 cpu, using gromacs 2018. The files are provided in Input/. The simulation should take about 1 minute
 
 2) Use mdtraj in a jupyter notebook to compute the phi and psi dihedral angles from these data. Make a plot of phi vs time and psi vs time.
 
-Make a free energy surface in phi, psi space from this data. In otherwords, compute a 2d histogram of the phi, psi data and plot the -log(histogram), nicely labeled, with a colorbar, etc
+ Make a free energy surface in phi, psi space from this data. In otherwords, compute a 2d histogram of the phi, psi data and plot the -log(histogram), nicely labeled, with a colorbar, etc
 
 3) Parallel tempering 
 a) Set up 4 directories called "T300 T350 T400 T450" which contain a file adp.tpr, except the temperature in adp.tpr is equal to 300, 350, 400 or 450 respectively.
