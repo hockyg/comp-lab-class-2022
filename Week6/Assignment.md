@@ -14,6 +14,7 @@ Make a jupyter notebook for analysis that generates any of the required plots wh
 2. Do masterclass exercise 1. The unbiased simulations should run in about 2 minutes on 1 cpu
 	- Use numpy to read in the COLVAR files and matplotlib to plot the dihedrals.
 	- Use mdtraj to compute the phi and psi dihedrals from the output xtc file. Plot them on top of the ones from the COLVAR file, making sure they agree!
+	- **I suggest you plot phi vs psi with plt.scatter to get a ramachandran-like plot instead of looking vs time**
 	- Compute the standard deviation of phi and the standard deviation of psi from the unbiased runs to give you an idea of the SIGMA values for metadynamics in the next step. 
 3. Now switch to [Lugano tutorial](https://www.plumed.org/doc-master/user-doc/html/lugano-3.html) and do exercise 1, the first metadynamiscs simulation, starting from structure A, **using bias factor 10**.
 	- The full reference is in the [documentation](https://www.plumed.org/doc-master/user-doc/html/_m_e_t_a_d.html)
