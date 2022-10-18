@@ -16,6 +16,9 @@ Make a jupyter notebook for analysis that generates any of the required plots wh
 	- Use mdtraj to compute the phi and psi dihedrals from the output xtc file. Plot them on top of the ones from the COLVAR file, making sure they agree!
 	- Compute the standard deviation of phi and the standard deviation of psi from the unbiased runs to give you an idea of the SIGMA values for metadynamics in the next step. 
 3. Now switch to [Lugano tutorial](https://www.plumed.org/doc-master/user-doc/html/lugano-3.html) and do exercise 1, the first metadynamiscs simulation, starting from structure A, **using bias factor 10**.
+	- The full reference is in the [documentation](https://www.plumed.org/doc-master/user-doc/html/_m_e_t_a_d.html)
+	- In addition to the inputs in the tutorial, try adding `GRID_WFILE=__FILENAME__.grid.dat GRID_WSTRIDE=10000` to write out a grid file.
+	- The grid file has the bias. Plot the negative of the energy column in the grid file, does it look like the FES? Is it slightly different? Perhaps scaled by a constant that you can figure out?
 4. Do Lugano exercise 2.
 	- In addition to what is said, try either a different hill height or sigma value and see how it changes the speed of convergence
 5. Do Lugano exercise 3 - try at least 3 different bias factors to see how this affects your results.
@@ -26,6 +29,7 @@ Make a jupyter notebook for analysis that generates any of the required plots wh
 	- Put `ARG=phi,psi` and for `SIGMA=sigma_phi,sigma_psi`
 	- Run at least 10 ns and check convergence of the FES with `sum_hills`. Is your bias factor and height okay or do you need to change it? Or run longer?
 	- `sum_hills` should produce a grid file which you can plot with imshow. Make a free energy surface with labeled axes and color bar. This time, add contour lines. This should look more like a surface than from replica exchange! 
+	- Bonus: If you use the `--stride` function to get many surfaces, can you make an animated gif of the free energy surface filling in?
 
 **As usual, save the relevant figures with good titles etc in a Figures folder, and give your files good names**. 
 I.e. we should not see just COLVAR but things like `ala2_metad_biasfactor10_pace500_height1.2_sigma0.3_10ns.colvar.txt` and similarly for hills, xtc...
