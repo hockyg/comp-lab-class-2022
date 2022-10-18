@@ -17,15 +17,17 @@ Make a jupyter notebook for analysis that generates any of the required plots wh
 	- Compute the standard deviation of phi and the standard deviation of psi from the unbiased runs to give you an idea of the SIGMA values for metadynamics in the next step. 
 3. Now switch to [Lugano tutorial](https://www.plumed.org/doc-master/user-doc/html/lugano-3.html) and do exercise 1, the first metadynamiscs simulation, starting from structure A, **using bias factor 10**.
 	- The full reference is in the [documentation](https://www.plumed.org/doc-master/user-doc/html/_m_e_t_a_d.html)
+	- Make sure the command is `metad: METAD ...` and the rest is on separate lines after. Careful if you're using a non-standard text editor.
+		- Backup, put all on one line and remove ... if you still have error
 	- In addition to the inputs in the tutorial, try adding `GRID_WFILE=__FILENAME__.grid.dat GRID_WSTRIDE=10000` to write out a grid file.
 	- The grid file has the bias. Plot the negative of the energy column in the grid file, does it look like the FES? Is it slightly different? Perhaps scaled by a constant that you can figure out?
 4. Do Lugano exercise 2.
-	- In addition to what is said, try either a different hill height or sigma value and see how it changes the speed of convergence
-5. Do Lugano exercise 3 - try at least 3 different bias factors to see how this affects your results.
+	- In addition to what is said, [*optional try either a different hill height or sigma value and see how it changes the speed of convergence*]
+5. [*optional Do Lugano exercise 3 - try at least 3 different bias factors to see how this affects your results.
 	- Show the exploration of phi for these different bias factors, what do you notice?
 	- What is the smallest you can pick where the barriers are not surmounted?
-	- Plot the final Free Energy for each one, does it look the same?
-6. Now we will do 2d metadynamics in phi and psi
+	- Plot the final Free Energy for each one, does it look the same?*]
+6. **Important** Now we will do 2d metadynamics in phi and psi
 	- Put `ARG=phi,psi` and for `SIGMA=sigma_phi,sigma_psi`
 	- Run at least 10 ns and check convergence of the FES with `sum_hills`. Is your bias factor and height okay or do you need to change it? Or run longer?
 	- `sum_hills` should produce a grid file which you can plot with imshow. Make a free energy surface with labeled axes and color bar. This time, add contour lines. This should look more like a surface than from replica exchange! 
