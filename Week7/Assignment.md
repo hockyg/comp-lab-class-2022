@@ -4,7 +4,7 @@
 
 The PDB: https://www.rcsb.org/
 
-1. Get assigned one of the five proteins to study: (A) Ubiquitin, 1UBQ; (B) Streptavidin, 6ZYT, (C) Lysozyme, 1LYS (D) RNaseP, 6D1R, (E) DHFR, 2W9T
+1. Get assigned one of the five proteins to study: (A) Ubiquitin, 1UBQ; (B) Streptavidin, 3RY2, (C) Lysozyme, 1LYS (D) RNaseP, 6D1R, (E) DHFR, 2W9T
 	- Read about the function of this protein
 	- Figure out how many amino acids there are
 2. Get the sequence in fasta file format and PDB file format into your Inputs/ folder
