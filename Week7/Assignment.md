@@ -15,3 +15,4 @@ The PDB: https://www.rcsb.org/
 7. Using mdtraj, in a jupyter notebook, align your alphafold predictions to the crystal structure and make a bar plot showing the RMSD of each predicted structure to the crystal structure based on alpha-carbons and based on the full backbone and side-chains. Does alphafold get everything right or just the backbone structure? 
 8. From your alphafold greene output, make a picture of your protein colored by PLDDT score (stored in B-factor column), and put it in your figures folder. Which residues should we be confident in?
 9. (Bonus) In your jupyter notebook, load the pkl files and get the average PLDDT score for each predicted structure. Make a scatter plot of PLDDT vs RMSD of prediction. Are they correlated in your case?
+10. (Bonus) Compare to RoseTTAFold: `https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/RoseTTAFold.ipynb`
