@@ -28,6 +28,7 @@
 	- Run one in between that one and the one below to see if it crystallizes there? 
 	- Save nice images of the crystalline and non crystaline phases in the image directory labeled by their density from VMD
 	- Save the trajectories and log files in the Trajectories/ or Data/ folder
+
 ### Part 2 - Make a new script for 3D WCA
 1. Make a script in Inputs called 3dWCA.in by copying 2dWCA.in
 2. Make this work for 3d by
