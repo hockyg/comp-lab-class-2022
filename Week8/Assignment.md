@@ -20,7 +20,7 @@
 	- I have provided a script for you called `Inputs/2dWCA.in`; It initializes a 2d WCA system at a certain *number density* (N/V) and higher temperature, runs the system for some time at that higher temperature, then cools down to a lower temperature over the course of some number of steps. The output is written to a DCD file, and also one frame is written to a LAMMPS file so that you can open it in VMD
 		 - Try to understand what each part does! Don't be afriad to start looking at the LAMMPS manual
 	- In a test directory, try running the script to see what it does at a certain density, e.g. `mpirun lmp -var density 0.5  -in ../Inputs/2dWCA.in` 
-	- Open the output in VMD with the command `vmd 2dlj_T0.1_d0.5_N100000.lammpstrj 2dlj_T0.1_d0.5_N100000.dcd` and see what it looks like; change the display type to orthographic, the representation to VDW, and the particle size to 0.5. 
+	- Open the output in VMD with the command `vmd 2dWCA_T0.1_d0.5_N100000.lammpstrj 2dWCA_T0.1_d0.5_N100000.dcd` and see what it looks like; change the display type to orthographic, the representation to VDW, and the particle size to 0.5. 
 2. Now, write a bash script with a for loop that runs this simulation for different densities
 	- Do this for densities ranging from 0.5 to 1.1 every 0.1
 	- Save a log file for each one either using `-log LOGFILE.log` or ` > LOGILFE.log`
