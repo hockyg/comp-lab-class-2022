@@ -57,7 +57,7 @@ Make 3 separate figures showing g_11(r), g_22(r), g_12(r) - each one at all the 
 
 2. Using the production data, compute the mean-squared displacement for type 1 particles at each tempearture. Make a figure showing the MSD at each temperature. This figure should be on a log-log scale. If you do this, you will see there is a small plateau and then diffusive behavior at longer time (linear slope).
 
-3. Find the time where MSD = 1 at each temperature. This is the time where the particle would diffuse 1 diameter on average. Make a plot of this time vs $1/T$
+3. Find the time where MSD = 1 at each temperature. This is the time where the particle would diffuse 1 diameter on average. Make a plot of this time vs $1/T$. This should also be a log-log plot.
 
 Save your figures in the Figures folder. 
 

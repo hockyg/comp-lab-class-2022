@@ -3,7 +3,7 @@ variable natoms equal 360
 variable volume equal 300
 
 variable prevtemp equal 0.475
-variable prevsteps equal 10000000
+variable prevsteps equal 30000000
 
 variable temp equal 0.45
 variable steps equal 100000000
