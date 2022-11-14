@@ -3,13 +3,13 @@
 ## Using psi4 in python to run quantum calculations
 
 ## Part 1
-Make a Jupyter notebook, use the lab_env environment
+- Make a Jupyter notebook, use the lab_env environment
 
-Do the psi4 tutorial at this url: https://psicode.org/psi4manual/master/psiapi.html
+- Do the psi4 tutorial at this url: https://psicode.org/psi4manual/master/psiapi.html
 
-For each step, run the code in a cell in your notebook
+- For each step, run the code in a cell in your notebook
 
-**Time each step, by adding `%%time`** at the top of each cell
+- **Time each step,** by adding `%%time` at the top of each cell
 
 ## Part 2
 
@@ -24,3 +24,4 @@ def lj(r,sigma,eps):
 ```
 
 - Make a nice plot of the energy versus distance with the computed values as dots and the values from the fit function with a dashed line, as shown in the lecture
+- Save this figure in the figures directory
