@@ -19,7 +19,7 @@
 	- Create a new jupyter notebook called `energy_table.ipynb`
 	- This page has a good description of SMILES strings: `https://chemicbook.com/2021/02/13/smiles-strings-explained-for-beginners-part-1.html`
 	- First, create a text file `smiles.csv` where the first line is `smiles` and the subsequent lines each contain 1 smiles string; Put the SMILES strings from the 7 molecules under **bonds** and the first three molecules under **Cyclic Structures/Ring Molecules**
-	- Follow this blog post to create a dataframe from your `smiles.csv`, adding the ROMol column and n_atoms column as described in the blog post. 
+	- Follow this blog post to create a dataframe from your `smiles.csv`, adding the ROMol column and n_atoms column as described in the blog post. `https://xinhaoli74.github.io/posts/2020/04/RDKit-Cheatsheet/`
 	- Then, use psikit to compute the optimized energy from each molecule. (this might take some time, so it could be helpful to perform a fake calculation first to make sure things are set up right)
 	- Add this energy as a column in your dataframe (look up how to add a column)
         - Have a cell at the end that shows your dataframe with the molecules and energies
