@@ -10,7 +10,7 @@ In this lab, you will use the code cp2k to run AIMD simulations of water, and a 
 	- Edit water.inp and replace `___FILL_IN___` with
 		- A project name, such as, water_aimd_1ns_every0.5fs
 		- A `WALLTIME` of 6 hours, **in seconds**
-		- `STEPS` corresponding to 1 nanosecond. How many steps is this??
+		- `STEPS` corresponding to 1 picosecond. How many steps is this??
 	- Create an sbatch file to run this job with
 		- 1 cpu per task
 		- 12 tasks per node
