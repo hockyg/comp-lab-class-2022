@@ -2,7 +2,7 @@
 
 In this lab, you will use the code cp2k to run AIMD simulations of water, and a solvated proton in water. Note that the input files are based on [this tutorial](https://www.cp2k.org/exercises:2015_pitt:aimd), and so the precise method used might not be good enough for use in research, but it is good enough to run the simulations we want within 1 day. 
 
-## Part 1 - Run AIMD for water for up to 1 ns
+## Part 1 - Run AIMD for water for up to 1 ps
 
 1. Create a directory called Runs/Water
 2. Copy the files from Inputs into this directory
