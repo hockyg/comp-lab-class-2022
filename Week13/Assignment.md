@@ -4,6 +4,8 @@ In this week, you will analyze the results of  QM/MM simulations that were run i
 
 The source for this tutorial is [This tutorial](https://www.cp2k.org/howto:biochem_qmmm)
 
+**Note - in some cases I gzipped the relevant files. You can unzip them with the command `gunzip`**
+
 ## Part 1 - setup
 1. Read the section "Generating a topology"
 2. Use vmd to open the file `Inputs/complex.prmtop` as the topology, then `Inputs/complex.inpcrd`
