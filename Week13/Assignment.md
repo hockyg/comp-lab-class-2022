@@ -33,7 +33,7 @@ The source for this tutorial is [This tutorial](https://www.cp2k.org/howto:bioch
 5. Make a picture of "before" and "after" the chemical reaction and a movie of the chemical reaction happening in the metadynamics simulation in `Outputs/metad1_initmonitor`, and save these three things to the images directory. 
 	- You probably want to show the ligand, the protein, and the protein sidechains near the ligand. An example follows.
 	- **To see the reaction happening, you have to use dynamic bonds as the representation for the ligand!**
-![Example figure](Figures/example_before_after.png])
+![Example figure](Figures/example_before_after.png)
 
 
 ## Wrap up
