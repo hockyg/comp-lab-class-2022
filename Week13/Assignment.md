@@ -28,7 +28,7 @@ The source for this tutorial is [This tutorial](https://www.cp2k.org/howto:bioch
 ## Part 4 - QM/MM plus metadynamics
 1. Read the section "Metadynamics"
 2. In your jupyter notebook, add another line showing the value of the reaction coordinate from the simulation in `Outputs/metad1_initmonitor`. Do you see a reaction, that is, a transition from + to - or - to + values of the CV?
-3. Read the `.inp' file to see the metadynamics parameters. Label your line in the plot with the value of hill height and hill width and hill frequency, so that it shows up in the caption, along with something showing that the `monitor' one is standard qm/mm
+3. Read the `.inp` file to see the metadynamics parameters. Label your line in the plot with the value of hill height and hill width and hill frequency, so that it shows up in the caption, along with something showing that the `monitor' one is standard qm/mm
 4. I ran another simulation in `Outputs/metad1_initmonitor_freqhills`. Add another line for this simulation. What did I change here? What is the result of that change in terms of the speed of sampling and how the simulation ends?
 5. Make a picture of "before" and "after" the chemical reaction and a movie of the chemical reaction happening in the metadynamics simulation in `Outputs/metad1_initmonitor`, and save these three things to the images directory. 
 	- You probably want to show the ligand, the protein, and the protein sidechains near the ligand. An example follows.
